@@ -1,5 +1,5 @@
 [routers]
-router ansible_host={{ ROUTER_IP }}
+router ansible_host=10.0.15.61
 
 [routers:vars]
 ansible_user=admin

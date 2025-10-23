@@ -6,7 +6,7 @@ def showrun():
     # Set environment variables for Ansible
     env = os.environ.copy()
     
-    command = ['ansible-playbook', 'backup_config.yml']
+    command = ['ansible-playbook', 'playbook.yaml']
     result = subprocess.run(command, capture_output=True, text=True, env=env)
     result_output = result.stdout
     print(result_output)
