@@ -84,13 +84,13 @@ python ipa2024_final.py
 
 2. Send commands to the Webex Teams room:
 ```
-/[STUDENT_ID] create
-/[STUDENT_ID] delete
-/[STUDENT_ID] enable
-/[STUDENT_ID] disable
-/[STUDENT_ID] status
-/[STUDENT_ID] gigabit_status
-/[STUDENT_ID] showrun
+/66070061 create
+/66070061 delete
+/66070061 enable
+/66070061 disable
+/66070061 status
+/66070061 gigabit_status
+/66070061 showrun
 ```
 
 Example:
@@ -126,5 +126,5 @@ This project is for educational purposes as part of IPA2024 Final Exam.
 
 ## Author
 
-- Student ID: [Your Student ID]
+- Student ID: 66070061
 - GitHub: https://github.com/SassyxD/IPA2024-Final
