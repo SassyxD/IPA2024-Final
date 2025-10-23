@@ -1,0 +1,26 @@
+---
+- name: Save router running configuration
+  hosts: routers
+  gather_facts: no
+  
+  vars:
+    student_id: "{{ ansible_student_id | default('66070123') }}"
+    router_name: "{{ inventory_hostname }}"
+    output_dir: "."
+    
+  tasks:
+    - name: Get running configuration
+      ios_command:
+        commands:
+          - show running-config
+      register: running_config
+      
+    - name: Save configuration to file
+      copy:
+        content: "{{ running_config.stdout[0] }}"
+        dest: "{{ output_dir }}/show_run_{{ student_id }}_{{ router_name }}.txt"
+      delegate_to: localhost
+      
+    - name: Display saved file location
+      debug:
+        msg: "Configuration saved to show_run_{{ student_id }}_{{ router_name }}.txt"

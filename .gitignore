@@ -1,0 +1,28 @@
+# Environment files  
+.env
+*.env
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Ansible files
+show_run_*.txt
+*.retry
+
+# Logs
+*.log
